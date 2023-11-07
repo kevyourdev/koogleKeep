@@ -27,7 +27,7 @@ function CreateArea(props) {
 
   // 提交新筆記的函數
   function submitNote(event) {
-    props.onAdd(note); // 呼叫父元件傳遞的 onAdd 函數，將筆記傳遞給父元件
+    props.onAdd(note); // 呼叫parent傳遞的 onAdd 函數，將筆記傳遞給parent
     setNote({
       title: "",
       content: ""

@@ -31,10 +31,8 @@ function App() {
 
   return (
     <div>
-      {/* render Header組件 */}
       <Header />
       
-      {/* render CreateArea組件，並將"addNote"函數傳遞為"onAdd"屬性 */}
       <CreateArea onAdd={addNote} />
       
       {/* 透過map函數，將"notes"陣列中的每個筆記render為Note組件 */}
@@ -45,12 +43,11 @@ function App() {
             id={index}
             title={noteItem.title}
             content={noteItem.content}
-            onDelete={deleteNote} // 傳遞"deleteNote"函數作為"onDelete"屬性
+            onDelete={deleteNote} 
           />
         );
       })}
       
-      {/* render Footer組件 */}
       <Footer />
     </div>
   );
